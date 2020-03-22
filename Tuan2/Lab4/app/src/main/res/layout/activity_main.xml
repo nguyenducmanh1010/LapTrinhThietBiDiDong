@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingLeft="10dp"
+       android:paddingRight="10dp"
+       >
+
+       <TextView
+           android:id="@+id/textView_setting"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Game Setting:"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentLeft="true"
+           android:textSize="24sp"
+
+           />
+
+       <TextView
+           android:id="@+id/textView_sound"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/textView_setting"
+           android:layout_marginTop="35dp"
+
+           android:text="Sound:"/>
+       <SeekBar
+           android:id="@+id/seekBar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_marginTop="35dp"
+           android:layout_below="@+id/textView_sound"
+           android:max="100"
+           android:progress="90"
+  />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/textView_bightness"
+           android:text="Bightnesss"
+           android:layout_below="@+id/seekBar"
+           android:layout_marginTop="35dp"/>
+
+       <SeekBar
+           android:id="@+id/seekBar1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_marginTop="35dp"
+           android:layout_below="@+id/textView_bightness"
+           android:max="100"
+           android:progress="95"
+           />
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/textView_diffLevel"
+           android:text="Diffcuti Level"
+           android:layout_below="@+id/seekBar1"
+           android:layout_marginTop="35dp"
+
+           />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup_diffLevel"
+            android:layout_below="@+id/textView_diffLevel"
+            android:layout_marginTop="35dp"
+            android:orientation="horizontal"
+            android:minHeight="50dp"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton_easy"
+                android:text="Easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_medium"
+                android:text="Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_hard"
+                android:text="Hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+       <Button
+           android:id="@+id/btnSave"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Save"
+           android:layout_below="@id/radioGroup_diffLevel"
+           android:layout_centerHorizontal="true"
+           android:onClick="doSave"
+           />
+
+   </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
