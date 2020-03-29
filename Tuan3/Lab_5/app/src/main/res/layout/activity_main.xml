@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:id="@+id/textView1"-->
+<!--    android:background="#ff0000ff"-->
+<!--    android:textStyle="bold"-->
+<!--    android:textSize="25sp"-->
+<!--    android:fontFamily="sans-serif"-->
+<!--    android:textColor="@color/colorPrimaryDark"/>-->
+
+
+
+        <TableRow
+            android:background="#00FF00"
+
+            >
+            <TextView
+                android:id="@+id/txtView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cộng trừ nhân chia"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:layout_span="4"
+                android:layout_gravity="center"
+
+
+                />
+
+        </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtSoa"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="1"
+            android:text="Số a:"
+            android:textSize="16sp"
+
+            />
+        <EditText
+            android:id="@+id/etSoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/txtSob"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="1"
+            android:text="Số b:"
+            android:textSize="16sp"
+            android:phoneNumber="true"
+
+            />
+        <EditText
+            android:id="@+id/etSob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:phoneNumber="true"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/btnCong"
+            android:layout_span="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+
+            />
+        <Button
+            android:id="@+id/btnTru"
+            android:layout_span="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+
+            />
+        <Button
+            android:id="@+id/btnNhan"
+            android:layout_span="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+
+            />
+        <Button
+            android:id="@+id/btnChia"
+            android:layout_span="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+
+            />
+    </TableRow>
+    <TableRow android:background="#00FF00">
+        <TextView
+            android:id="@+id/txtKetQua"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_span="4"
+            android:padding="10dp"
+
+            />
+    </TableRow>
+
+</TableLayout>
