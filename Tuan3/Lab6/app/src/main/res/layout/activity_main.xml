@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:gravity="center"
+            android:background="#008080"
+            android:id="@+id/txtView1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Thông Tin Cá Nhân"
+            android:textColor="#FFFF00"
+            android:textSize="19dp"
+            android:padding="5dp"
+
+            />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            <TableRow>
+
+                <TextView
+
+                    android:id="@+id/txtHoTen"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_span="1"
+                    android:text="Họ Tên:"
+                    android:textSize="16sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/etHoTen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+
+
+                    />
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtCmnd"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_span="1"
+                    android:text="CMND:"
+                    android:textSize="16sp"
+
+
+                    />
+                <EditText
+                    android:id="@+id/etCmnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_span="4"
+                    android:phoneNumber="true"
+                    />
+            </TableRow>
+
+        </TableLayout>
+        <TextView
+
+            android:id="@+id/txtBangCap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bằng Cấp"
+            android:textColor="#FFFF00"
+            android:background="#008000"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+        <RadioGroup
+            android:orientation="horizontal"
+
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:id="@+id/radiobtnTrungCap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+
+                android:text="Trung Cấp"/>
+            <RadioButton
+                android:id="@+id/radiobtnCaoDang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+
+                android:text="Cao Đẳng"/>
+            <RadioButton
+                android:id="@+id/radiobtnDaiHoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Đại Học"/>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/txtSoThich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sở Thích"
+            android:textColor="#FFFF00"
+            android:background="#008000"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/chkDocBao"
+                android:text="Đọc Báo"
+                android:padding="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:id="@+id/chkDocSach"
+                android:text="Đọc Sách"
+                android:padding="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <CheckBox
+                android:id="@+id/chkDocCoding"
+                android:text="Đọc Coding"
+                android:padding="5dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/txtThongTin"
+            android:text="Thông Tin Bổ Sung"
+            android:textColor="#FFFF00"
+            android:background="#008000"
+            android:textSize="15sp"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etThongTinBoSung"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            />
+        <Button
+            android:id="@+id/btnGuiThongBao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gữi Thông Báo"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
