@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lap_7</string>
+    <string name="txtname1">This is main Activity</string>
+    <string name="txtname2">This is Child Activity</string>
+    <string name="btnchild">Open  Main Activity</string>
+    <string name="btnmain">Open Child Activity</string>
+</resources>
