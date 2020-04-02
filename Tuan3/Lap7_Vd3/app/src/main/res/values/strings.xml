@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lap7_Vd3</string>
+    <string name="open">Mở Activity Nhâp Dữ Liệu</string>
+    <string name="txt1">Nhập số: </string>
+    <string name="btn1">Lưu Bình Phương</string>
+    <string name="btn2">Lưu Số Gốc</string>
+</resources>
