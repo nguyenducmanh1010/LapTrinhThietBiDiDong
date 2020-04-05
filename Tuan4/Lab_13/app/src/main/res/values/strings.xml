@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab_13</string>
+    <string name="txtlacation">Location</string>
+    <string name="txtwather"> -Weather-</string>
+    <string name="btnwaether">How is the Weather to day ?</string>
+    <string name="etHanoi">Ha Noi</string>
+</resources>
